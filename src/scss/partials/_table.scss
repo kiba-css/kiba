@@ -8,7 +8,7 @@
   }
 
   &--striped {
-    &__row {
+    .table__row {
       &:nth-child(even) {
         background-color: #f9f9f9;
       }
@@ -20,7 +20,7 @@
   }
 
   &--horizontal-lines {
-    &__row {
+    .table__row {
       border-bottom: 1px solid #ccc;
     }
   }

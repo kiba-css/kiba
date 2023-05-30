@@ -15,32 +15,24 @@
 	padding-right: 1rem;
 	padding-left: 1rem;
 
+	@media (min-width: $kiba-mq-small) {
+		max-width: $kiba-container-small-width;
+	}
+	
+	@media (min-width: $kiba-mq-medium) {
+		max-width: $kiba-container-medium-width;
+	}
+	
+	@media (min-width: $kiba-mq-large) {
+		max-width: $kiba-container-large-width;
+	}
+	
+	@media (min-width: $kiba-mq-xlarge) {
+		max-width: $kiba-container-xlarge-width;
+	}
+
 	&--fluid {
 		width: 100%;
 		max-width: none;
-	}
-}
-
-@media (min-width: $kiba-mq-small) {
-	.container {
-		max-width: $kiba-container-small-width;
-	}
-}
-
-@media (min-width: $kiba-mq-medium) {
-	.container {
-		max-width: $kiba-container-medium-width;
-	}
-}
-
-@media (min-width: $kiba-mq-large) {
-	.container {
-		max-width: $kiba-container-large-width;
-	}
-}
-
-@media (min-width: $kiba-mq-xlarge) {
-	.container {
-		max-width: $kiba-container-xlarge-width;
 	}
 }

@@ -77,6 +77,17 @@
 .line-through {
 	text-decoration: line-through
 }
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+	transform: rotate(180deg);
+}
+
+.rotate-270 {
+	transform: rotate(270deg);
+}
 
 .italic {
 	font-style: italic
@@ -314,6 +325,10 @@
 
 .rounded-full {
 	border-radius: 100%;
+}
+
+.border-none {
+	border-style:none;
 }
 
 .p-0 {
