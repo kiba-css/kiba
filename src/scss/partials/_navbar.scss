@@ -1,0 +1,43 @@
+// This partial requires the following variable:
+// - $kiba-mq-medium: Maximum width for medium screens
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 6px #f8f9fa;
+	padding: 1rem 2rem;
+
+	&__brand {
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		&__item {
+			margin: 0.5rem;
+		}
+
+		&__link {
+			font-weight: bold;
+			font-size: 1rem;
+			padding: 0.5rem 1rem;
+			border-radius: 0.25rem;
+		}
+	}
+
+	@media (max-width: $kiba-mq-medium) {
+		&__menu {
+			flex-direction: column;
+
+			&__item {
+				margin: 0;
+			}
+		}
+	}
+}

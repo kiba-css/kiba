@@ -1,0 +1,37 @@
+{
+  "name": "kiba-css",
+  "version": "0.9.0",
+  "description": "Keep It BEM-aligned with CSS Utilities",
+  "scripts": {
+    "build": "npm run scss-kiba-bundle && npm run scss-components-bundle && npm run scss-components-sep",
+    "scss-kiba-bundle": "sass --style=compressed src/scss/build/kiba.scss:dest/kiba.min.css",
+    "scss-components-bundle": "sass --style=compressed src/scss/build/components.scss:dest/components.min.css",
+    "scss-components-sep": "npm run scss-container && npm run scss-button && npm run scss-form && npm run scss-grid && npm run scss-navbar && npm run scss-table",
+    "scss-container":  "sass --style=compressed src/scss/build/container.scss:dest/container.min.css",
+    "scss-button":  "sass --style=compressed src/scss/build/button.scss:dest/button.min.css",
+    "scss-form":  "sass --style=compressed src/scss/build/form.scss:dest/form.min.css",
+    "scss-grid":  "sass --style=compressed src/scss/build/grid.scss:dest/grid.min.css",
+    "scss-navbar":  "sass --style=compressed src/scss/build/navbar.scss:dest/navbar.min.css",
+    "scss-table":  "sass --style=compressed src/scss/build/table.scss:dest/table.min.css"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maname/KIBA-CSS.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "bem",
+    "framework"
+  ],
+  "author": "Alexander Hasl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maname/KIBA-CSS/issues"
+  },
+  "homepage": "https://github.com/maname/KIBA-CSS#readme",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
