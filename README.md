@@ -30,3 +30,8 @@ npm install kiba-install
 ```
 
 Afterwards all Kiba-CSS files should be located into the `kiba-css/dest` directory. Scss partials for to take advantage of variables and extensions can be found in `kiba-css/src/scss/partials`.
+
+[license file]: 
+[kiba]: http://kiba-css.com
+[kiba-github]: https://github.com/kiba-css/kiba
+[started]: https://kiba-css.com#gettingStarted
