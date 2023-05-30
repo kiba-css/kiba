@@ -21,9 +21,12 @@ Table
 Navigation
 These components could actually be added to any project with BEM architecture. It can be easily customized and extended to fit the specific needs.
 
-## Additional Information
-In addition to the information above, you can also include the following on your GitHub page for Kiba-CSS:
+## Get Started
+Check out the Get Started page for more information.
 
-Installation instructions
+## Build from source
+```python
+npm install kiba-install
+```
 
-TODO Demo page
+Afterwards all Kiba-CSS files should be located into the kiba-css/dest directory. Scss partials for to take advantage of variables and extensions can be foudn in kiba-css/src/scss/partials.
