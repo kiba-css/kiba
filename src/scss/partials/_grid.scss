@@ -3,83 +3,93 @@
 // - $kiba-mq-medium: Minimum width for medium screens
 // - $kiba-mq-large: Minimum width for large screens
 // - $kiba-mq-xlarge: Minimum width for extra large screens
-
 .grid {
 	display: grid;
-
-	@for $i from 1 through 12 {
-		&__col--#{$i} {
-			grid-column: span #{$i} / span #{$i};
+  
+	.grid__col {
+	  @for $i from 1 through 12 {
+		&--#{$i} {
+		  grid-column: span #{$i} / span #{$i};
 		}
+	  }
 	}
-
+  
 	@media (min-width: $kiba-mq-small) {
+	  .grid__col {
 		@for $i from 1 through 12 {
-			&__col--#{$i}-sm {
-				grid-column: span #{$i} / span #{$i};
-			}
+		  &--#{$i}-sm {
+			grid-column: span #{$i} / span #{$i};
+		  }
 		}
+	  }
 	}
-
+  
 	@media (min-width: $kiba-mq-medium) {
+	  .grid__col {
 		@for $i from 1 through 12 {
-			&__col--#{$i}-md {
-				grid-column: span #{$i} / span #{$i};
-			}
+		  &--#{$i}-md {
+			grid-column: span #{$i} / span #{$i};
+		  }
 		}
+	  }
 	}
-
+  
 	@media (min-width: $kiba-mq-large) {
+	  .grid__col {
 		@for $i from 1 through 12 {
-			&__col--#{$i}-lg {
-				grid-column: span #{$i} / span #{$i};
-			}
+		  &--#{$i}-lg {
+			grid-column: span #{$i} / span #{$i};
+		  }
 		}
+	  }
 	}
-
+  
 	@media (min-width: $kiba-mq-xlarge) {
+	  .grid__col {
 		@for $i from 1 through 12 {
-			&__col--#{$i}-xl {
-				grid-column: span #{$i} / span #{$i};
-			}
+		  &--#{$i}-xl {
+			grid-column: span #{$i} / span #{$i};
+		  }
 		}
+	  }
 	}
-
+  
 	@for $i from 2 through 12 {
-		&--cols-#{$i} {
-			grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-		}
+	  &--cols-#{$i} {
+		grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+	  }
 	}
-
+  
 	@media screen and (min-width: $kiba-mq-small) {
-		@for $i from 2 through 12 {
-			&--cols-#{$i}-sm {
-				grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-			}
+	  @for $i from 2 through 12 {
+		&--cols-#{$i}-sm {
+		  grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
 		}
+	  }
 	}
-
+  
 	@media screen and (min-width: $kiba-mq-medium) {
-		@for $i from 2 through 12 {
-			&--cols-#{$i}-md {
-				grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-			}
+	  @for $i from 2 through 12 {
+		&--cols-#{$i}-md {
+		  grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
 		}
+	  }
 	}
-
+  
 	@media screen and (min-width: $kiba-mq-large) {
-		@for $i from 2 through 12 {
-			&--cols-#{$i}-lg {
-				grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-			}
+	  @for $i from 2 through 12 {
+		&--cols-#{$i}-lg {
+		  grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
 		}
+	  }
 	}
-
+  
 	@media screen and (min-width: $kiba-mq-xlarge) {
-		@for $i from 2 through 12 {
-			&--cols-#{$i}-xl {
-				grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
-			}
+	  @for $i from 2 through 12 {
+		&--cols-#{$i}-xl {
+		  grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
 		}
+	  }
 	}
-}
+  }
+  
