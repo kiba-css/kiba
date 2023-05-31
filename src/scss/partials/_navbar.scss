@@ -1,35 +1,56 @@
 // This partial requires the following variable:
 // - $kiba-mq-medium: Maximum width for medium screens
-.navbar {
+%navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 4px 6px #f8f9fa;
 	padding: 1rem 2rem;
+}
+
+%navbar__brand {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+%navbar__menu {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+%navbar__item {
+	margin: 0.5rem;
+}
+
+%navbar__link {
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar {
+	@extend %navbar;
 
 	&__brand {
-		font-weight: bold;
-		font-size: 1.5rem;
+		@extend %navbar__brand;
 	}
 
 	&__menu {
-		display: flex;
-		flex-wrap: wrap;
-		list-style: none;
-		margin: 0;
-		padding: 0;
+		@extend %navbar__menu;
 
-		.navbar__item {
-			margin: 0.5rem;
+		&__item {
+			@extend %navbar__item;
 		}
 
-		.navbar__link {
-			font-weight: bold;
-			font-size: 1rem;
-			padding: 0.5rem 1rem;
-			border-radius: 0.25rem;
+		&__link {
+			@extend %navbar__link;
 			color: black;
-			text-decoration: none;
 		}
 	}
 
@@ -37,7 +58,7 @@
 		&__menu {
 			flex-direction: column;
 
-			.navbar__item {
+			&__item {
 				margin: 0;
 			}
 		}
