@@ -43,24 +43,21 @@
 
 	&__menu {
 		@extend %navbar__menu;
-
-		&__item {
-			@extend %navbar__item;
-		}
-
-		&__link {
-			@extend %navbar__link;
-			color: black;
-		}
+	}
+	&__item {
+		@extend %navbar__item;
 	}
 
+	&__link {
+		@extend %navbar__link;
+		color: black;
+	}
 	@media (max-width: $kiba-mq-medium) {
 		&__menu {
 			flex-direction: column;
-
-			&__item {
-				margin: 0;
-			}
+		}
+		&__item {
+			margin: 0;
 		}
 	}
 }
