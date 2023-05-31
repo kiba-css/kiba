@@ -22,7 +22,7 @@ Navigation
 These components could actually be added to any project with BEM architecture. It can be easily customized and extended to fit the specific needs.
 
 ## Get Started
-Check out the Get Started page for more information.
+Check out the Get [Get Started][started] for more information.
 
 ## Build from source
 ```python
@@ -32,6 +32,4 @@ npm install kiba-install
 Afterwards all Kiba-CSS files should be located into the `kiba-css/dest` directory. Scss partials for to take advantage of variables and extensions can be found in `kiba-css/src/scss/partials`.
 
 [license file]: 
-[kiba]: http://kiba-css.com
-[kiba-github]: https://github.com/kiba-css/kiba
-[started]: https://kiba-css.com#gettingStarted
+[started]: https://kiba-css.com/#gettingStarted
