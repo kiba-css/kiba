@@ -12,7 +12,7 @@ Additionally, Kiba-CSS offers a wide range of utility classes, enabling you to a
 
 One of the benefits of using Kiba-CSS is the possibility to use BEM components with other frameworks or libraries, such as Tailwind.
 
-Kiba-CSS provides standalone BEM components that can be used without the need for any utility classes, allowing for greater flexibility in styling. 
+Kiba-CSS provides standalone BEM components that can be used without the need for any utility classes, allowing for greater flexibility in styling.
 This also means that developers can use Kiba-CSS BEM components with utility classes of other frameworks, creating a seamless and efficient styling experience.
 
 ## Available BEM Components
@@ -32,12 +32,18 @@ These components could actually be added to any project with BEM architecture. I
 
 Check out the [Get Started Guide](https://kiba-css.com/#gettingStarted) for more information.
 
+## Install with npm
+
+```shell
+npm install kiba-css
+```
+
 ## Build from source
 
 ```shell
-npm install kiba-install
+npm run build
 ```
 
-Afterwards all Kiba-CSS files should be located in the `dest` directory. 
+Afterwards all Kiba-CSS files should be located in the `dest` directory.
 
 SCSS partials which take advantage of variables and extensions can be found in `src/scss/partials`.
