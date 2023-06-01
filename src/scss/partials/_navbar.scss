@@ -11,6 +11,7 @@
 %navbar__brand {
 	font-weight: bold;
 	font-size: 1.5rem;
+	margin-right: 2em;
 }
 
 %navbar__menu {
@@ -37,6 +38,10 @@
 .navbar {
 	@extend %navbar;
 
+	&--scroll {
+		overflow-x: auto;
+	}
+
 	&__brand {
 		@extend %navbar__brand;
 	}
@@ -58,6 +63,12 @@
 		}
 		&__item {
 			margin: 0;
+		}
+	}
+	&--scroll {
+		.navbar__menu {
+			flex-direction: row;
+			flex-wrap: unset;
 		}
 	}
 }
