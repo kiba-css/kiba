@@ -1,6 +1,6 @@
 {
   "name": "kiba-css",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Keep It BEM-aligned with CSS Utilities",
   "scripts": {
     "build": "npm run scss-kiba-bundle && npm run scss-components-bundle && npm run scss-components-sep",

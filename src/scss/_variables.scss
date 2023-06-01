@@ -1,9 +1,5 @@
 :root {
-    --kiba-html-font: var(--kiba-html-font);
-    --kiba-mq-small: 36em;
-    --kiba-mq-medium: 48em;
-    --kiba-mq-large: 62em;
-    --kiba-mq-xlarge: 75em;
+    --kiba-html-font: ui-sans-serif,Arial,sans-serif;
     --kiba-container-small-width: 33.75em;
     --kiba-container-medium-width: 45em;
     --kiba-container-large-width: 60em;
@@ -27,10 +23,10 @@
   }
 
   $kiba-html-font: var(--kiba-html-font);
-  $kiba-mq-small: var(--kiba-mq-small);
-  $kiba-mq-medium: var(--kiba-mq-medium);
-  $kiba-mq-large: var(--kiba-mq-large);
-  $kiba-mq-xlarge: var(--kiba-mq-xlarge);
+  $kiba-mq-small: 36em;
+  $kiba-mq-medium: 48em;
+  $kiba-mq-large: 62em;
+  $kiba-mq-xlarge: 75em;
   $kiba-container-small-width: var(--kiba-container-small-width);
   $kiba-container-medium-width: var(--kiba-container-medium-width);
   $kiba-container-large-width: var(--kiba-container-large-width);
