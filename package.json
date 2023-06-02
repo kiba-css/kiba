@@ -1,8 +1,9 @@
 {
   "name": "kiba-css",
-  "version": "0.9.8",
+  "version": "0.9.9",
   "description": "Keep It BEM-aligned with CSS Utilities",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "npm run scss-kiba-bundle && npm run scss-components-bundle && npm run scss-components-sep",
     "scss-kiba-bundle": "sass --style=compressed src/scss/build/kiba.scss:dest/kiba.min.css",
     "scss-components-bundle": "sass --style=compressed src/scss/build/components.scss:dest/components.min.css",

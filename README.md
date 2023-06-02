@@ -38,12 +38,6 @@ Check out the [Get Started Guide](https://kiba-css.com/#gettingStarted) for more
 npm install kiba-css
 ```
 
-## Build from source
-
-```shell
-npm run build
-```
-
 Afterwards all Kiba-CSS files should be located in the `dest` directory.
 
 SCSS partials which take advantage of variables and extensions can be found in `src/scss/partials`.
