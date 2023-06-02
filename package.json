@@ -1,6 +1,6 @@
 {
   "name": "kiba-css",
-  "version": "0.9.9",
+  "version": "0.5.4",
   "description": "Keep It BEM-aligned with CSS Utilities",
   "scripts": {
     "postinstall": "npm run build",
