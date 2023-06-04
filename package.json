@@ -1,19 +1,19 @@
 {
   "name": "kiba-css",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Keep It BEM-aligned with CSS Utilities",
   "scripts": {
     "postinstall": "npm run build",
-    "build": "npm run scss-kiba-bundle && npm run scss-components-bundle && npm run scss-components-sep",
-    "scss-kiba-bundle": "sass --style=compressed src/scss/build/kiba.scss:dest/kiba.min.css",
-    "scss-components-bundle": "sass --style=compressed src/scss/build/components.scss:dest/components.min.css",
-    "scss-components-sep": "npm run scss-container && npm run scss-button && npm run scss-form && npm run scss-grid && npm run scss-navbar && npm run scss-table",
-    "scss-container":  "sass --style=compressed src/scss/build/container.scss:dest/container.min.css",
-    "scss-button":  "sass --style=compressed src/scss/build/button.scss:dest/button.min.css",
-    "scss-form":  "sass --style=compressed src/scss/build/form.scss:dest/form.min.css",
-    "scss-grid":  "sass --style=compressed src/scss/build/grid.scss:dest/grid.min.css",
-    "scss-navbar":  "sass --style=compressed src/scss/build/navbar.scss:dest/navbar.min.css",
-    "scss-table":  "sass --style=compressed src/scss/build/table.scss:dest/table.min.css"
+    "build": "npm run build:scss-kiba-bundle && npm run build:scss-components-bundle && npm run build:scss-components-sep",
+    "build:scss-kiba-bundle": "sass --style=compressed src/scss/build/kiba.scss:dest/kiba.min.css",
+    "build:scss-components-bundle": "sass --style=compressed src/scss/build/components.scss:dest/components.min.css",
+    "build:scss-components-sep": "npm run build:scss-container && npm run build:scss-button && npm run build:scss-form && npm run build:scss-grid && npm run build:scss-navbar && npm run build:scss-table",
+    "build:scss-container":  "sass --style=compressed src/scss/build/container.scss:dest/container.min.css",
+    "build:scss-button":  "sass --style=compressed src/scss/build/button.scss:dest/button.min.css",
+    "build:scss-form":  "sass --style=compressed src/scss/build/form.scss:dest/form.min.css",
+    "build:scss-grid":  "sass --style=compressed src/scss/build/grid.scss:dest/grid.min.css",
+    "build:scss-navbar":  "sass --style=compressed src/scss/build/navbar.scss:dest/navbar.min.css",
+    "build:scss-table":  "sass --style=compressed src/scss/build/table.scss:dest/table.min.css"
    
   },
   "repository": {
