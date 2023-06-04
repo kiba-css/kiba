@@ -1,0 +1,38 @@
+// This partial requires the following variables:
+// - $kiba-mq-small: Minimum width for small screens
+// - $kiba-mq-medium: Minimum width for medium screens
+// - $kiba-mq-large: Minimum width for large screens
+// - $kiba-mq-xlarge: Minimum width for extra large screens
+// - $kiba-container-small-width: Maximum width for small container
+// - $kiba-container-medium-width: Maximum width for medium container
+// - $kiba-container-large-width: Maximum width for large container
+// - $kiba-container-xlarge-width: Maximum width for extra large container
+
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: $kiba-mq-small) {
+		max-width: $kiba-container-small-width;
+	}
+	
+	@media (min-width: $kiba-mq-medium) {
+		max-width: $kiba-container-medium-width;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	
+	@media (min-width: $kiba-mq-large) {
+		max-width: $kiba-container-large-width;
+	}
+	
+	@media (min-width: $kiba-mq-xlarge) {
+		max-width: $kiba-container-xlarge-width;
+	}
+
+	&--fluid {
+		width: 100%;
+		max-width: none;
+	}
+}
